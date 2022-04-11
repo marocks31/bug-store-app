@@ -1,0 +1,31 @@
+### Bugs Index
+GET http://localhost:3000/bugs
+
+### Bugs Create
+POST http://localhost:3000/bugs
+Content-Type: application/json
+
+{
+  "breed": "test2",
+  "age": 3,
+  "description": "testing 1 2 3",
+  "price": 3
+}
+
+
+### Bugs Show
+GET http://localhost:3000/bugs
+
+### Bugs Update
+PATCH http://localhost:3000/bugs/1
+Content-Type: application/json
+
+{
+  "breed": "Catepillar",
+  "age": 3,
+  "description": "Young little baby catepillar, will become a Monarch",
+  "price": 3
+}
+
+### Bugs Destroy
+DELETE http://localhost:3000/bugs/2
